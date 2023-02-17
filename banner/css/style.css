@@ -1,0 +1,150 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400;500;600&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
+body {
+    margin: 0;
+    padding: 0;
+    /* font-weight: 400; */
+    /* line-height: 1.5em;
+    display: flex; */
+    /* justify-content:center;
+    align-items: center;
+    height: 100vh; */
+}
+
+a {text-decoration: none; color: #000;}
+ul {list-style: none;}
+
+/* css 초기화 */
+
+.gallery {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    height: 100vh;
+}
+
+li {
+    border-right: 5px solid #000;
+    flex: 1;
+    transition: 0.5s;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+li:last-child {
+    border-right: none;
+}
+li:nth-child(1) {
+    background: url("../images/korea_g.jpg") no-repeat center center / cover ;
+}
+
+li:nth-child(2) {
+    background: url("../images/Switzerland_g.jpg") no-repeat center center / cover;
+}
+li:nth-child(3) {
+    background: url("../images/Paris_g.jpg") no-repeat center center / cover;
+}
+li:nth-child(4) {
+    background: url("../images/japan_g.jpg") no-repeat center center / cover;
+}
+li:nth-child(5) {
+    background: url("../images/china_g.jpg") no-repeat center center / cover;
+}
+
+.gallery:hover li {
+    flex: 1;
+}
+
+.gallery li:hover {
+    flex: 3;
+}
+
+li:nth-child(1):hover {
+    background: url("../images/korea.jpg") no-repeat center center / cover ;
+}
+
+li:nth-child(2):hover {
+    background: url("../images/Switzerland.jpg") no-repeat center center / cover;
+}
+
+li:nth-child(3):hover {
+    background: url("../images/Paris.jpg") no-repeat center center / cover;
+}
+li:nth-child(4):hover {
+    background: url("../images/japan.jpg") no-repeat center center / cover;
+}
+li:nth-child(5):hover {
+    background: url("../images/china.jpg") no-repeat center center / cover;
+}
+
+
+.content {
+    position: absolute;
+    background: rgba(0,0,0,0.8);
+    color: #fff;
+    text-align: center;
+    bottom: -900px;
+    transition: 0.5s;
+    padding-bottom: 80px;
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* .content::before {
+    content: '';
+    position: absolute;
+    background: rgba(0,0,0,0.8);
+    width: 100%;
+    height: 80px;
+    top: -30px;
+    left: 0;
+    transform: rotate(-3deg) scale(1.5);
+    transform-origin: left bottom;
+} */
+
+li:hover .content {
+    bottom: 0;
+    transition-delay: 0.5s;
+}
+
+/* 나라별 국기 */
+
+li:nth-child(1) span {
+    display: inline-block;
+    background: url("../images/k.jpg") no-repeat center center / contain;
+    width: 80px;
+    height: 52px;
+}
+
+li:nth-child(2) span {
+    display: inline-block;
+    background: url("../images/s.jpg") no-repeat center center / contain;
+    width: 80px;
+    height: 52px;
+}
+
+li:nth-child(3) span {
+    display: inline-block;
+    background: url("../images/u.jpg") no-repeat center center / contain;
+    width: 80px;
+    height: 52px;
+}
+
+li:nth-child(4) span {
+    display: inline-block;
+    background: url("../images/j.jpg") no-repeat center center / contain;
+    width: 80px;
+    height: 52px;
+}
+
+li:nth-child(5) span {
+    display: inline-block;
+    background: url("../images/c.jpg") no-repeat center center / contain;
+    width: 80px;
+    height: 52px;
+}
