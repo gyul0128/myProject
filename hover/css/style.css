@@ -1,0 +1,115 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400;500;600&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+/* css 초기화 */
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    line-height: 1.5em;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height: 100vh;
+}
+
+a {text-decoration: none;}
+
+ul {
+    list-style: none;
+    position: absolute;
+    width: 639px;
+}
+
+li {
+    cursor: pointer;
+    font-size: 40px;
+    margin: 40px;
+    position: relative;
+    display: inline-block;
+}
+a {
+    color: #000;
+}
+
+li:nth-child(1) a::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 45px;
+    width: 3px;
+    height: 3px;
+    background: skyblue;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+ul li:nth-child(1):hover a::before {
+    width: 100%;
+    opacity: 1;
+}
+
+ul:hover a {
+    opacity: 0.2;
+}
+
+li:hover a{
+    color: skyblue;
+    opacity: 1;
+}
+
+li:nth-child(2) a::before{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 45px;
+    right: 0;
+    width: 3px;
+    height: 3px;
+    background: skyblue;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+ul li:nth-child(2):hover a::before {
+    width: 100%;
+    opacity: 1;
+}
+
+li:nth-child(3) a::before {
+    content: '';
+    display: block;
+    position: absolute;
+    transform: translateX(-50%);
+    top: 45px;
+    left: 50%;
+    width: 3px;
+    height: 3px;
+    background: skyblue;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+li:nth-child(3):hover a::before {
+    width: 100%;
+    opacity: 1;
+}
+
+li:nth-child(4) a::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 15px;
+    left: 0;
+    width: 3px;
+    height: 3px;
+    background: skyblue;
+    opacity: 0;
+    transition: 0.5s;
+}
+li:nth-child(4):hover a::before{
+    opacity: 1;
+    width: 100%;
+}
