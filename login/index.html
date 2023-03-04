@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/5c0649470d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/login.css">
+    <script src="js/login.js"></script>
+    <title>login</title>
+</head>
+<body>
+    <div class="contain">
+        <div class="item hidden">
+            <h1 class="hidden">Login</h1>
+            <h2 class="greeting hidden"></h2>
+            <button class="logout hidden">logout</button>
+            <form id="login-form" class="hidden">
+                <div id="id">
+                    <input type="text" id="mail" class="username" autocomplete="off" placeholder="" required=""/>
+                    <label for="mail" class="mail_label">* Username</label>
+                </div>
+        
+                <div id="pwd">
+                    <input type="password" id="pwd" class="pwd" autocomplete="off" placeholder="" required=""/>
+                    <i class="fa-solid fa-eye"></i>
+                    <label for="pwd" class="pwd_label">* Password </label>
+                </div>
+                <button>login</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

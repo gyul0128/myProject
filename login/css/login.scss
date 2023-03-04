@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+
+body {
+    background: url(../images/01.jpg) no-repeat center center /cover;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding:0;
+}
+
+.contain {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    .item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .hidden {
+            display: none;
+        }
+
+        h1 {
+            font-size: 60px;
+            color: #fff;
+            text-align: center;
+            margin-bottom: 15px;
+            margin-top: 0;
+        }
+
+        h2 {
+            color: #fff;
+        }
+
+        .logout {
+            width: 260px;
+            height: 40px;
+            border-radius: 5px;
+            background:#F03B7A;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 40px;
+            font-family: 'Poppins', sans-serif;
+            color: #fff;
+            transition: 0.3s;
+            &:hover {
+                background: #fff;
+                color: #000;
+            }
+        }
+        
+        form {
+            width: 100%;
+            border-radius: 10px;
+            background: #14163E;
+            padding: 20px;
+            box-sizing: border-box;
+        
+            #id {
+                position:relative;
+                margin-bottom: 15px;
+                .mail_label {
+                    position: absolute;
+                    top: 8px;
+                    left: 21px;
+                    font-size: 15px;
+                    font-weight: 300;
+                    color: #ebebeb;
+                    transition: 0.3s;
+                    cursor:text;
+                    transition: top 200ms ease-in,
+                        left 200ms ease-in,
+                        font-size 100ms ease-in;
+                }
+                .username {
+                    width: 260px;
+                    height: 40px;
+                    border-radius: 5px;
+                    border: 1px solid #8d92b1;
+                    padding: 5px;
+                    box-sizing: border-box;
+                    font-size: 18px;
+                    padding-left: 20px;
+                    background: #14163E;
+                    outline: none;
+                    color: #fff;
+
+                    &:focus {
+                        border: 2px solid #F03B7A;
+                    }
+                }
+
+                input:focus ~ label,
+                input:valid ~ label {
+                    top: -8px;
+                    left: 10px;
+                    font-size: 12px;
+                    padding: 0 10px;
+                    background: #14163E;
+                    color: #F03B7A;
+                }
+
+                // input:focus {
+                //     border: 2px solid #F03B7A;
+                // }
+                // input:focus + label,
+                // input:valid ~ label{
+                //     top: -8px;
+                //     left: 10px;
+                //     font-size: 0.8rem;
+                //     background: #14163E;
+                //     padding: 0 10px;
+                //     color: #F03B7A;
+                // }
+            }
+        
+            #pwd {
+                position:relative;
+                margin-bottom: 15px;
+                .pwd_label {
+                    position: absolute;
+                    top: 9px;
+                    left: 21px;
+                    font-size: 15px;
+                    font-weight: 300;
+                    color: #ebebeb;
+                    z-index: 2;
+                    transition: 0.3s;
+                    cursor:text;
+                    transition: top 200ms ease-in,
+                    left 200ms ease-in,
+                    font-size 100ms ease-in;
+                    background: #14163E;
+                }
+
+                i {
+                    position: absolute;
+                    top: 13px;
+                    right: 20px;
+                    font-size: 15px;
+                    color: #444;
+                    cursor: pointer;
+                }
+                i.on {
+                color: #fff;
+                }
+                .pwd {
+                    width: 260px;
+                    height: 40px;
+                    border-radius: 5px;
+                    border: 1px solid #8d92b1;
+                    padding: 5px;
+                    box-sizing: border-box;
+                    font-size: 18px;
+                    padding-left: 20px;
+                    margin-bottom: 0;
+                    background: #14163E;
+                    outline: none;
+                    color: #fff;
+
+                    &:focus {
+                        border: 2px solid #F03B7A;
+                    }
+                }
+                input[type=text] {
+                    width: 260px;
+                    height: 40px;
+                    border-radius: 5px;
+                    border: 1px solid #8d92b1;
+                    padding: 5px;
+                    box-sizing: border-box;
+                    font-size: 18px;
+                    padding-left: 20px;
+                    margin-bottom: 0;
+                    background: #14163E;
+                    outline: none;
+                    color: #fff;
+                }
+                input:focus ~ label,
+                input:valid ~ label {
+                    top: -8px;
+                    left: 10px;
+                    font-size: 12px;
+                    padding: 0 10px;
+                    background: #14163E;
+                    color: #F03B7A;
+                }
+            }
+        
+            button {
+                width: 260px;
+                height: 40px;
+                border-radius: 5px;
+                background:#F03B7A;
+                border: none;
+                cursor: pointer;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 40px;
+                font-family: 'Poppins', sans-serif;
+                color: #fff;
+                transition: 0.3s;
+                &:hover {
+                    background: #fff;
+                    color: #000;
+                }
+            }
+        }
+    }
+}
+
